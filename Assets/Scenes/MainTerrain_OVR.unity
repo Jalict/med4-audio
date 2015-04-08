@@ -1539,10 +1539,6 @@ Prefab:
       propertyPath: m_Name
       value: Radio Tower
       objectReference: {fileID: 0}
-    - target: {fileID: 11457720, guid: 56f52808adcf31f4dbd23d1942d3d557, type: 2}
-      propertyPath: _maximumDistance
-      value: 200
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 56f52808adcf31f4dbd23d1942d3d557, type: 2}
   m_IsPrefabParent: 0
@@ -1587,10 +1583,10 @@ MonoBehaviour:
   m_Script: {fileID: -607568035, guid: 97a56801bcfe6ee47903a70dd64bdc23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioClip: {fileID: 8300000, guid: ac52f0b1c3098d647a47dcd1d31f8965, type: 3}
+  audioClip: {fileID: 8300000, guid: f6026769c9a5b2749b91b936a0f8ec00, type: 3}
   _playOnAwake: 1
   _mute: 0
-  _loop: 0
+  _loop: 1
   _volume: .0500000007
   _pitch: 1
   _minimumDistance: 1

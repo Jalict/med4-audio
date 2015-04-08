@@ -418,8 +418,7 @@ GameObject:
   - 4: {fileID: 476866}
   - 95: {fileID: 9594560}
   - 65: {fileID: 6592090}
-  - 82: {fileID: 8225130}
-  - 114: {fileID: 11457720}
+  - 114: {fileID: 11476134}
   m_Layer: 0
   m_Name: Radio Tower 1
   m_TagString: Untagged
@@ -3642,75 +3641,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 13, y: 40, z: 13}
   m_Center: {x: -.400000006, y: 0, z: -1.10000002}
---- !u!82 &8225130
-AudioSource:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 132828}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 0b38b6a0072251d4dabf7cacb1416eed, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 1
-  Mute: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
 --- !u!95 &9594560
 Animator:
   serializedVersion: 3
@@ -3728,7 +3658,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11457720
+--- !u!114 &11476134
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -3736,11 +3666,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 132828}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1188964664, guid: 97a56801bcfe6ee47903a70dd64bdc23, type: 3}
+  m_Script: {fileID: -607568035, guid: 97a56801bcfe6ee47903a70dd64bdc23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioClip: {fileID: 8300000, guid: 0b38b6a0072251d4dabf7cacb1416eed, type: 3}
+  _playOnAwake: 1
+  _mute: 0
+  _loop: 1
+  _volume: 1
+  _pitch: 1
   _minimumDistance: 1
-  _maximumDistance: 1000
+  _maximumDistance: 100
   _rollOffFactor: 1
   _maxDistanceMute: 0
   _dopplerIntensity: .100000001
@@ -3749,6 +3685,7 @@ MonoBehaviour:
   _detectRoomTrigger: 1
   _dopplerToggle: 1
   _channelSelect: 0
+  _reverbToggle: 0
   _sourcePannerType: 0
   _roomPannerType: 0
   _attenMode: 0
