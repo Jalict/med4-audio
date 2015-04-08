@@ -1,17 +1,11 @@
 fileFormatVersion: 2
 guid: 97a56801bcfe6ee47903a70dd64bdc23
-timeCreated: 1428426234
-licenseType: Free
 PluginImporter:
   serializedVersion: 1
   iconMap: {}
   executionOrder:
-    TBE_3DCore.TBE_Destroy: 100
-    TBE_3DCore.TBE_Environment: -250
     TBE_3DCore.TBE_GlobalListener: -200
-    TBE_3DCore.TBE_Initialise: -400
-    TBE_3DCore.TBE_InitialiseRoomModelling: -300
-    TBE_3DCore.TBE_RoomProperties: -100
+    TBE_3DCore.TBE_RoomProperties: -150
   isPreloaded: 0
   platformData:
     Any:
@@ -23,4 +17,3 @@ PluginImporter:
         DefaultValueInitialized: true
   userData: 
   assetBundleName: 
-  assetBundleVariant: 
