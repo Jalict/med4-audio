@@ -27,9 +27,12 @@ GameObject:
   - 4: {fileID: 488498}
   - 114: {fileID: 11417344}
   - 114: {fileID: 11429156}
+<<<<<<< HEAD
+=======
   - 81: {fileID: 8179296}
   - 114: {fileID: 11488656}
   - 114: {fileID: 11484284}
+>>>>>>> origin/master
   m_Layer: 0
   m_Name: OVRCameraRig
   m_TagString: Untagged
@@ -129,6 +132,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 427592}
   - 81: {fileID: 8161680}
+  - 114: {fileID: 11445618}
   m_Layer: 0
   m_Name: CenterEyeAnchor
   m_TagString: Untagged
@@ -193,8 +197,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 173116}
+<<<<<<< HEAD
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 285.200012, y: 87.1999969, z: 334.100006}
+=======
   m_LocalRotation: {x: 0, y: .682496309, z: 0, w: .730889142}
   m_LocalPosition: {x: 174, y: 35.7999992, z: 193}
+>>>>>>> origin/master
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 483478}
@@ -338,13 +347,6 @@ AudioListener:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 179374}
   m_Enabled: 1
---- !u!81 &8179296
-AudioListener:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 151118}
-  m_Enabled: 1
 --- !u!108 &10841968
 Light:
   m_ObjectHideFlags: 1
@@ -471,6 +473,9 @@ MonoBehaviour:
   resetTrackerOnLoad: 1
   monoscopic: 0
   hdr: 0
+<<<<<<< HEAD
+--- !u!114 &11445618
+=======
 --- !u!114 &11434888
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -519,11 +524,12 @@ MonoBehaviour:
   _roomPannerType: 0
   _attenMode: 0
 --- !u!114 &11488656
+>>>>>>> origin/master
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 151118}
+  m_GameObject: {fileID: 179374}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1232234360, guid: 97a56801bcfe6ee47903a70dd64bdc23, type: 3}
