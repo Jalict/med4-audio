@@ -563,7 +563,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0950df82e7936c84983497630bde5b54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Acceleration: .0299999993
+  Acceleration: .0399999991
   Damping: .300000012
   BackAndSideDampen: .5
   JumpForce: .300000012
