@@ -17,8 +17,7 @@ public class Footsteps : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
-		if(obj.GetComponent<CharacterController>().velocity.magnitude > 0.1f) {
+		if(obj.GetComponent<CharacterController>().velocity.magnitude > 2.0f) {
 			src.mute = false;
 		} else {
 			src.mute = true;

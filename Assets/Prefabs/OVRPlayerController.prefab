@@ -130,6 +130,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &175876
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 494666}
+  - 114: {fileID: 11443214}
+  - 114: {fileID: 11406588}
+  m_Layer: 0
+  m_Name: FootStepSound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &190980
 GameObject:
   m_ObjectHideFlags: 1
@@ -208,6 +225,7 @@ Transform:
   - {fileID: 409358}
   - {fileID: 479250}
   - {fileID: 402808}
+  - {fileID: 494666}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &458016
@@ -263,6 +281,18 @@ Transform:
   - {fileID: 474634}
   m_Father: {fileID: 453432}
   m_RootOrder: 1
+--- !u!4 &494666
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 175876}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .0199999996, y: -.686999977, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 453432}
+  m_RootOrder: 3
 --- !u!20 &2006400
 Camera:
   m_ObjectHideFlags: 1
@@ -391,7 +421,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0950df82e7936c84983497630bde5b54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Acceleration: .100000001
+  Acceleration: .0399999991
   Damping: .300000012
   BackAndSideDampen: .5
   JumpForce: .300000012
@@ -415,6 +445,19 @@ MonoBehaviour:
   fadeTime: 2
   fadeColor: {r: .00999999978, g: .00999999978, b: .00999999978, a: 1}
   fadeShader: {fileID: 30, guid: 0000000000000000f000000000000000, type: 0}
+--- !u!114 &11406588
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 175876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bfd93b52cc8bb546a90ba6197cb0b7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  src: {fileID: 0}
+  obj: {fileID: 124466}
 --- !u!114 &11414146
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -426,6 +469,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bf170db1c6a44a44941f0cfb6048fd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11443214
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 175876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -607568035, guid: 97a56801bcfe6ee47903a70dd64bdc23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClip: {fileID: 8300000, guid: 7fdb3da9e9545a349940ba5b043ac8c7, type: 3}
+  _playOnAwake: 1
+  _mute: 0
+  _loop: 1
+  _volume: .0250000004
+  _pitch: -.980000019
+  _minimumDistance: 1
+  _maximumDistance: 1000
+  _rollOffFactor: 1
+  _maxDistanceMute: 0
+  _dopplerIntensity: .100000001
+  _roomToggle: 1
+  _erRoomObject: {fileID: 0}
+  _detectRoomTrigger: 1
+  _dopplerToggle: 1
+  _channelSelect: 0
+  _reverbToggle: 0
+  _sourcePannerType: 0
+  _roomPannerType: 0
+  _attenMode: 0
 --- !u!114 &11479400
 MonoBehaviour:
   m_ObjectHideFlags: 1
