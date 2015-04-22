@@ -126,9 +126,45 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 11443214, guid: 05e59783bd384d64588d26c10b4f0bba, type: 2}
+      propertyPath: _reverbToggle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11443214, guid: 05e59783bd384d64588d26c10b4f0bba, type: 2}
+      propertyPath: _volume
+      value: .00499999989
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 05e59783bd384d64588d26c10b4f0bba, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &30139784 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 175876, guid: 05e59783bd384d64588d26c10b4f0bba, type: 2}
+  m_PrefabInternal: {fileID: 30139783}
+--- !u!167 &30139785
+AudioReverbZone:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 30139784}
+  m_Enabled: 1
+  m_MinDistance: 10
+  m_MaxDistance: 15
+  m_ReverbPreset: 16
+  m_Room: -1000
+  m_RoomHF: -3300
+  m_DecayTime: 1.49000001
+  m_DecayHFRatio: .540000021
+  m_Reflections: -2560
+  m_ReflectionsDelay: .162
+  m_Reverb: -229
+  m_ReverbDelay: .0879999995
+  m_HFReference: 5000
+  m_RoomRolloffFactor: 0
+  m_Diffusion: 79
+  m_Density: 100
+  m_LFReference: 250
+  m_RoomLF: 0
 --- !u!1001 &218106840
 Prefab:
   m_ObjectHideFlags: 0
@@ -359,6 +395,7 @@ GameObject:
   - 4: {fileID: 378696583}
   - 114: {fileID: 378696584}
   - 114: {fileID: 378696585}
+  - 167: {fileID: 378696586}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -405,7 +442,7 @@ MonoBehaviour:
   _detectRoomTrigger: 1
   _dopplerToggle: 1
   _channelSelect: 0
-  _reverbToggle: 0
+  _reverbToggle: 1
   _sourcePannerType: 0
   _roomPannerType: 0
   _attenMode: 0
@@ -420,6 +457,30 @@ MonoBehaviour:
   m_Script: {fileID: 1507039794, guid: 97a56801bcfe6ee47903a70dd64bdc23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!167 &378696586
+AudioReverbZone:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 378696582}
+  m_Enabled: 1
+  m_MinDistance: 10
+  m_MaxDistance: 15
+  m_ReverbPreset: 16
+  m_Room: -1000
+  m_RoomHF: -3300
+  m_DecayTime: 1.49000001
+  m_DecayHFRatio: .540000021
+  m_Reflections: -2560
+  m_ReflectionsDelay: .162
+  m_Reverb: -229
+  m_ReverbDelay: .0879999995
+  m_HFReference: 5000
+  m_RoomRolloffFactor: 0
+  m_Diffusion: 79
+  m_Density: 100
+  m_LFReference: 250
+  m_RoomLF: 0
 --- !u!1001 &484889178
 Prefab:
   m_ObjectHideFlags: 0
@@ -778,6 +839,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 908611841}
   - 114: {fileID: 908611842}
+  - 167: {fileID: 908611843}
   m_Layer: 0
   m_Name: ExtraSound
   m_TagString: Untagged
@@ -824,10 +886,34 @@ MonoBehaviour:
   _detectRoomTrigger: 1
   _dopplerToggle: 1
   _channelSelect: 0
-  _reverbToggle: 0
+  _reverbToggle: 1
   _sourcePannerType: 0
   _roomPannerType: 0
   _attenMode: 0
+--- !u!167 &908611843
+AudioReverbZone:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 908611840}
+  m_Enabled: 1
+  m_MinDistance: 10
+  m_MaxDistance: 15
+  m_ReverbPreset: 16
+  m_Room: -1000
+  m_RoomHF: -3300
+  m_DecayTime: 1.49000001
+  m_DecayHFRatio: .540000021
+  m_Reflections: -2560
+  m_ReflectionsDelay: .162
+  m_Reverb: -229
+  m_ReverbDelay: .0879999995
+  m_HFReference: 5000
+  m_RoomRolloffFactor: 0
+  m_Diffusion: 79
+  m_Density: 100
+  m_LFReference: 250
+  m_RoomLF: 0
 --- !u!4 &962842979 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 24be8e1643b8a474fbb57fcda8a1c454, type: 2}
@@ -2060,6 +2146,30 @@ Prefab:
 GameObject:
   m_PrefabParentObject: {fileID: 100118, guid: b49ea8031cb1cf34bb26549bb9fa49da, type: 3}
   m_PrefabInternal: {fileID: 1968090938}
+--- !u!167 &1931159552
+AudioReverbZone:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1931159551}
+  m_Enabled: 1
+  m_MinDistance: 10
+  m_MaxDistance: 15
+  m_ReverbPreset: 16
+  m_Room: -1000
+  m_RoomHF: -3300
+  m_DecayTime: 1.49000001
+  m_DecayHFRatio: .540000021
+  m_Reflections: -2560
+  m_ReflectionsDelay: .162
+  m_Reverb: -229
+  m_ReverbDelay: .0879999995
+  m_HFReference: 5000
+  m_RoomRolloffFactor: 0
+  m_Diffusion: 79
+  m_Density: 100
+  m_LFReference: 250
+  m_RoomLF: 0
 --- !u!65 &1931159553
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2099,7 +2209,7 @@ MonoBehaviour:
   _detectRoomTrigger: 1
   _dopplerToggle: 1
   _channelSelect: 0
-  _reverbToggle: 0
+  _reverbToggle: 1
   _sourcePannerType: 0
   _roomPannerType: 0
   _attenMode: 0
@@ -2526,7 +2636,7 @@ MeshRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2002184889}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
@@ -2565,6 +2675,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2088826946}
   - 114: {fileID: 2088826947}
+  - 167: {fileID: 2088826948}
   m_Layer: 0
   m_Name: Frogs
   m_TagString: Untagged
@@ -2617,10 +2728,34 @@ MonoBehaviour:
   _detectRoomTrigger: 1
   _dopplerToggle: 1
   _channelSelect: 0
-  _reverbToggle: 0
+  _reverbToggle: 1
   _sourcePannerType: 0
   _roomPannerType: 0
   _attenMode: 0
+--- !u!167 &2088826948
+AudioReverbZone:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2088826945}
+  m_Enabled: 1
+  m_MinDistance: 10
+  m_MaxDistance: 15
+  m_ReverbPreset: 16
+  m_Room: -1000
+  m_RoomHF: -3300
+  m_DecayTime: 1.49000001
+  m_DecayHFRatio: .540000021
+  m_Reflections: -2560
+  m_ReflectionsDelay: .162
+  m_Reverb: -229
+  m_ReverbDelay: .0879999995
+  m_HFReference: 5000
+  m_RoomRolloffFactor: 0
+  m_Diffusion: 79
+  m_Density: 100
+  m_LFReference: 250
+  m_RoomLF: 0
 --- !u!4 &2097608212 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
