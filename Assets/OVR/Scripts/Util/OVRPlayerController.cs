@@ -278,7 +278,7 @@ public class OVRPlayerController : MonoBehaviour
 			euler.y -= RotationRatchet;
 
 		if (Input.GetKeyDown(KeyCode.E))
-			euler.y += RotationRatchet;
+			euler.y += RotationRatchet; 
 
 		float rotateInfluence = SimulationRate * Time.deltaTime * RotationAmount * RotationScaleMultiplier;
 
