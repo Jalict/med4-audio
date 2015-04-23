@@ -314,7 +314,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 467762, guid: 8680747d07d0a324c8e6958e983bf42a, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 489886, guid: 8680747d07d0a324c8e6958e983bf42a, type: 2}
       propertyPath: m_LocalPosition.y
@@ -498,45 +498,21 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 11443214, guid: 05e59783bd384d64588d26c10b4f0bba, type: 2}
-      propertyPath: _reverbToggle
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11443214, guid: 05e59783bd384d64588d26c10b4f0bba, type: 2}
-      propertyPath: _volume
-      value: .00499999989
-      objectReference: {fileID: 0}
+    - target: {fileID: 11409808, guid: 05e59783bd384d64588d26c10b4f0bba, type: 2}
+      propertyPath: objW
+      value: 
+      objectReference: {fileID: 274192942}
+    - target: {fileID: 11409808, guid: 05e59783bd384d64588d26c10b4f0bba, type: 2}
+      propertyPath: objT
+      value: 
+      objectReference: {fileID: 1968090939}
+    - target: {fileID: 11409808, guid: 05e59783bd384d64588d26c10b4f0bba, type: 2}
+      propertyPath: objF
+      value: 
+      objectReference: {fileID: 1405337771}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 05e59783bd384d64588d26c10b4f0bba, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1480725405 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 175876, guid: 05e59783bd384d64588d26c10b4f0bba, type: 2}
-  m_PrefabInternal: {fileID: 1480725404}
---- !u!167 &1480725406
-AudioReverbZone:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1480725405}
-  m_Enabled: 1
-  m_MinDistance: 10
-  m_MaxDistance: 15
-  m_ReverbPreset: 16
-  m_Room: -1000
-  m_RoomHF: -3300
-  m_DecayTime: 1.49000001
-  m_DecayHFRatio: .540000021
-  m_Reflections: -2560
-  m_ReflectionsDelay: .162
-  m_Reverb: -229
-  m_ReverbDelay: .0879999995
-  m_HFReference: 5000
-  m_RoomRolloffFactor: 0
-  m_Diffusion: 79
-  m_Density: 100
-  m_LFReference: 250
-  m_RoomLF: 0
 --- !u!1001 &1885937923
 Prefab:
   m_ObjectHideFlags: 0
@@ -742,7 +718,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 425672, guid: cc5bdafbc6f51b340bda1da9e3d2b94b, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc5bdafbc6f51b340bda1da9e3d2b94b, type: 2}

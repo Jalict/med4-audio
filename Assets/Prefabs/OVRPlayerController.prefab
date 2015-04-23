@@ -99,6 +99,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &161034
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 449554}
+  - 33: {fileID: 3362210}
+  - 64: {fileID: 6473532}
+  - 23: {fileID: 2385670}
+  - 114: {fileID: 11409808}
+  m_Layer: 0
+  m_Name: PaperGuide
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &168378
 GameObject:
   m_ObjectHideFlags: 1
@@ -140,6 +159,7 @@ GameObject:
   - 4: {fileID: 494666}
   - 114: {fileID: 11443214}
   - 114: {fileID: 11406588}
+  - 167: {fileID: 16769458}
   m_Layer: 0
   m_Name: FootStepSound
   m_TagString: Untagged
@@ -212,6 +232,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 474634}
   m_RootOrder: 2
+--- !u!4 &449554
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 161034}
+  m_LocalRotation: {x: -3.98711428e-08, y: .969591975, z: -.244727314, w: -1.57966582e-07}
+  m_LocalPosition: {x: .0329999998, y: -.514999986, z: .467000008}
+  m_LocalScale: {x: .0907477736, y: .308446884, z: .0900173485}
+  m_Children: []
+  m_Father: {fileID: 453432}
+  m_RootOrder: 4
 --- !u!4 &453432
 Transform:
   m_ObjectHideFlags: 1
@@ -219,13 +251,14 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 124466}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 249.300003, y: 4.9000001, z: 247.800003}
+  m_LocalPosition: {x: 246.699997, y: 5.01000023, z: 247.800003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 409358}
   - {fileID: 479250}
   - {fileID: 402808}
   - {fileID: 494666}
+  - {fileID: 449554}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &458016
@@ -357,6 +390,49 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
+--- !u!23 &2385670
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 161034}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 6dc7b314df0ce9e498ed1ae5e0f18794, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_ImportantGI: 0
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &3362210
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 161034}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!64 &6473532
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 161034}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!81 &8106854
 AudioListener:
   m_ObjectHideFlags: 1
@@ -458,6 +534,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   src: {fileID: 0}
   obj: {fileID: 124466}
+--- !u!114 &11409808
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 161034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 601c5fc193ba0574498213d3e03b4ec1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objW: {fileID: 0}
+  objT: {fileID: 0}
+  objF: {fileID: 0}
+  rend: {fileID: 2385670}
+  texture1: {fileID: 2800000, guid: b346403024d1cc24cbe88553532f291f, type: 3}
+  texture2: {fileID: 2800000, guid: 2d076a7af8be9e649821f20efb38dfeb, type: 3}
+  texture3: {fileID: 2800000, guid: 881862ff99c359a4ebc60d5cfda0681d, type: 3}
 --- !u!114 &11414146
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -484,7 +578,7 @@ MonoBehaviour:
   _playOnAwake: 1
   _mute: 0
   _loop: 1
-  _volume: .0250000004
+  _volume: .00499999989
   _pitch: -.980000019
   _minimumDistance: 1
   _maximumDistance: 1000
@@ -496,7 +590,7 @@ MonoBehaviour:
   _detectRoomTrigger: 1
   _dopplerToggle: 1
   _channelSelect: 0
-  _reverbToggle: 0
+  _reverbToggle: 1
   _sourcePannerType: 0
   _roomPannerType: 0
   _attenMode: 0
@@ -561,6 +655,30 @@ CharacterController:
   m_SkinWidth: .00999999978
   m_MinMoveDistance: 0
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!167 &16769458
+AudioReverbZone:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 175876}
+  m_Enabled: 1
+  m_MinDistance: 10
+  m_MaxDistance: 15
+  m_ReverbPreset: 16
+  m_Room: -1000
+  m_RoomHF: -3300
+  m_DecayTime: 1.49000001
+  m_DecayHFRatio: .540000021
+  m_Reflections: -2560
+  m_ReflectionsDelay: .162
+  m_Reverb: -229
+  m_ReverbDelay: .0879999995
+  m_HFReference: 5000
+  m_RoomRolloffFactor: 0
+  m_Diffusion: 79
+  m_Density: 100
+  m_LFReference: 250
+  m_RoomLF: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
