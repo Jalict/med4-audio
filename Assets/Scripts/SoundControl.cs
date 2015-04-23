@@ -61,7 +61,7 @@ public class SoundControl : MonoBehaviour {
 			state = 3;
 			StartCoroutine(GoThroughTags());
 		}
-		if(Input.GetKeyDown(KeyCode.A)) {
+		if(Input.GetKeyDown(KeyCode.K)) {
 			Application.LoadLevel(1);
 		}
 	}

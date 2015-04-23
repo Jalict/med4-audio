@@ -563,23 +563,23 @@ AudioReverbZone:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 378696582}
   m_Enabled: 1
-  m_MinDistance: 10
-  m_MaxDistance: 15
-  m_ReverbPreset: 16
-  m_Room: -1000
-  m_RoomHF: -3300
-  m_DecayTime: 1.49000001
-  m_DecayHFRatio: .540000021
-  m_Reflections: -2560
-  m_ReflectionsDelay: .162
-  m_Reverb: -229
-  m_ReverbDelay: .0879999995
+  m_MinDistance: 15
+  m_MaxDistance: 75
+  m_ReverbPreset: 27
+  m_Room: -8000
+  m_RoomHF: -300
+  m_DecayTime: 1.20000005
+  m_DecayHFRatio: .519999981
+  m_Reflections: 7
+  m_ReflectionsDelay: .0160000008
+  m_Reverb: -6385
+  m_ReverbDelay: .00499999989
   m_HFReference: 5000
   m_RoomRolloffFactor: 0
-  m_Diffusion: 79
-  m_Density: 100
+  m_Diffusion: 25
+  m_Density: 13
   m_LFReference: 250
-  m_RoomLF: 0
+  m_RoomLF: -100
 --- !u!1001 &484889178
 Prefab:
   m_ObjectHideFlags: 0
@@ -635,15 +635,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400002, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 28.2234802
+      value: 28.2000008
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 122.66629
+      value: 147.899994
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -4.61976624
+      value: -4.5999999
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1065,7 +1065,7 @@ GameObject:
   - 167: {fileID: 908611843}
   m_Layer: 0
   m_Name: ExtraSound
-  m_TagString: Untagged
+  m_TagString: soundChange
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1077,7 +1077,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 908611840}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 62.1496773, y: 34.7402344, z: -122.203682}
+  m_LocalPosition: {x: -.800000012, y: 24.8999996, z: 1.09000003}
   m_LocalScale: {x: 1.41843975, y: 1.41843975, z: 1.41843975}
   m_Children: []
   m_Father: {fileID: 1968090939}
@@ -1097,9 +1097,9 @@ MonoBehaviour:
   _playOnAwake: 1
   _mute: 0
   _loop: 1
-  _volume: 1
+  _volume: .0799999982
   _pitch: 1.29999995
-  _minimumDistance: 1
+  _minimumDistance: 15
   _maximumDistance: 75
   _rollOffFactor: 1.10000002
   _maxDistanceMute: 0
@@ -1120,23 +1120,23 @@ AudioReverbZone:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 908611840}
   m_Enabled: 1
-  m_MinDistance: 10
-  m_MaxDistance: 15
-  m_ReverbPreset: 16
+  m_MinDistance: 20
+  m_MaxDistance: 240
+  m_ReverbPreset: 27
   m_Room: -1000
-  m_RoomHF: -3300
-  m_DecayTime: 1.49000001
-  m_DecayHFRatio: .540000021
-  m_Reflections: -2560
-  m_ReflectionsDelay: .162
-  m_Reverb: -229
-  m_ReverbDelay: .0879999995
+  m_RoomHF: -300
+  m_DecayTime: .300000012
+  m_DecayHFRatio: 1.61000001
+  m_Reflections: -1500
+  m_ReflectionsDelay: .0160000008
+  m_Reverb: -6385
+  m_ReverbDelay: .0219999999
   m_HFReference: 5000
   m_RoomRolloffFactor: 0
-  m_Diffusion: 79
-  m_Density: 100
+  m_Diffusion: 52
+  m_Density: 42
   m_LFReference: 250
-  m_RoomLF: 0
+  m_RoomLF: -100
 --- !u!1 &948776400
 GameObject:
   m_ObjectHideFlags: 0
@@ -3430,23 +3430,23 @@ AudioReverbZone:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2088826945}
   m_Enabled: 1
-  m_MinDistance: 10
-  m_MaxDistance: 15
-  m_ReverbPreset: 16
-  m_Room: -1000
-  m_RoomHF: -3300
-  m_DecayTime: 1.49000001
-  m_DecayHFRatio: .540000021
-  m_Reflections: -2560
-  m_ReflectionsDelay: .162
-  m_Reverb: -229
-  m_ReverbDelay: .0879999995
+  m_MinDistance: 15
+  m_MaxDistance: 75
+  m_ReverbPreset: 27
+  m_Room: -8000
+  m_RoomHF: -300
+  m_DecayTime: 1.20000005
+  m_DecayHFRatio: .519999981
+  m_Reflections: 7
+  m_ReflectionsDelay: .0160000008
+  m_Reverb: -6385
+  m_ReverbDelay: .00499999989
   m_HFReference: 5000
   m_RoomRolloffFactor: 0
-  m_Diffusion: 79
-  m_Density: 100
+  m_Diffusion: 25
+  m_Density: 13
   m_LFReference: 250
-  m_RoomLF: 0
+  m_RoomLF: -100
 --- !u!4 &2097608212 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
