@@ -33,11 +33,11 @@ public class SoundControl : MonoBehaviour {
 
 		foreach(GameObject obj in soundsObjs) {
 			if(state == 1) {
-				//obj.GetComponent<TBE_Source>()
+				obj.GetComponent<TBE_Source>().minimumDistance = 9999;
 			} else if(state == 2) {
-				//obj.GetComponent<TBE_Source>()
+				obj.GetComponent<TBE_Source>().dopplerToggle = false;
 			} else if(state == 3) {
-				//obj.GetComponent<TBE_Source>()
+				obj.GetComponent<TBE_Source>().reverbToggle = false;
 
 			}
 		}
@@ -51,12 +51,18 @@ public class SoundControl : MonoBehaviour {
 	void Update () {
 		if(Input.GetKeyDown(KeyCode.Alpha1)) {
 			state = 1;
+			StartCoroutine(GoThroughTags());
 		}
 		if(Input.GetKeyDown(KeyCode.Alpha2)) {
 			state = 2;
+			StartCoroutine(GoThroughTags());
 		}
 		if(Input.GetKeyDown(KeyCode.Alpha3)) {
 			state = 3;
+			StartCoroutine(GoThroughTags());
+		}
+		if(Input.GetKeyDown(KeyCode.A)) {
+			Application.LoadLevel(1);
 		}
 	}
 }
