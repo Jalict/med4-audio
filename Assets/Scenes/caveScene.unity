@@ -1537,9 +1537,9 @@ MonoBehaviour:
   _loop: 1
   _volume: 1
   _pitch: 1
-  _minimumDistance: 1
-  _maximumDistance: 75
-  _rollOffFactor: .5
+  _minimumDistance: 50
+  _maximumDistance: 100
+  _rollOffFactor: .800000012
   _maxDistanceMute: 0
   _dopplerIntensity: .100000001
   _roomToggle: 1
@@ -1547,7 +1547,7 @@ MonoBehaviour:
   _detectRoomTrigger: 1
   _dopplerToggle: 1
   _channelSelect: 0
-  _reverbToggle: 0
+  _reverbToggle: 1
   _sourcePannerType: 0
   _roomPannerType: 0
   _attenMode: 0
