@@ -140,7 +140,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 9a148d0ced0184ecda423aefa4890ffb, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9a148d0ced0184ecda423aefa4890ffb, type: 3}
@@ -327,7 +327,7 @@ MonoBehaviour:
   _playOnAwake: 1
   _mute: 0
   _loop: 1
-  _volume: .310000002
+  _volume: .200000003
   _pitch: 1
   _minimumDistance: 1
   _maximumDistance: 75
@@ -853,12 +853,12 @@ MonoBehaviour:
   _playOnAwake: 1
   _mute: 0
   _loop: 1
-  _volume: .189999998
+  _volume: .119999997
   _pitch: 1
-  _minimumDistance: 1
-  _maximumDistance: 75
-  _rollOffFactor: 1.20000005
-  _maxDistanceMute: 0
+  _minimumDistance: 10
+  _maximumDistance: 400
+  _rollOffFactor: 1.29999995
+  _maxDistanceMute: 1
   _dopplerIntensity: .100000001
   _roomToggle: 1
   _erRoomObject: {fileID: 0}
@@ -1574,11 +1574,11 @@ MonoBehaviour:
   _playOnAwake: 1
   _mute: 0
   _loop: 1
-  _volume: 1
+  _volume: .300000012
   _pitch: 1
-  _minimumDistance: 1
-  _maximumDistance: 75
-  _rollOffFactor: .5
+  _minimumDistance: 50
+  _maximumDistance: 100
+  _rollOffFactor: .800000012
   _maxDistanceMute: 0
   _dopplerIntensity: .100000001
   _roomToggle: 1
@@ -1586,7 +1586,7 @@ MonoBehaviour:
   _detectRoomTrigger: 1
   _dopplerToggle: 1
   _channelSelect: 0
-  _reverbToggle: 0
+  _reverbToggle: 1
   _sourcePannerType: 0
   _roomPannerType: 0
   _attenMode: 0

@@ -327,7 +327,7 @@ MonoBehaviour:
   _playOnAwake: 1
   _mute: 0
   _loop: 1
-  _volume: .310000002
+  _volume: .200000003
   _pitch: 1
   _minimumDistance: 1
   _maximumDistance: 75
@@ -853,12 +853,12 @@ MonoBehaviour:
   _playOnAwake: 1
   _mute: 0
   _loop: 1
-  _volume: 1
+  _volume: .119999997
   _pitch: 1
-  _minimumDistance: 1
-  _maximumDistance: 75
-  _rollOffFactor: 1.10000002
-  _maxDistanceMute: 0
+  _minimumDistance: 10
+  _maximumDistance: 400
+  _rollOffFactor: 1.29999995
+  _maxDistanceMute: 1
   _dopplerIntensity: .100000001
   _roomToggle: 1
   _erRoomObject: {fileID: 0}
@@ -1574,7 +1574,7 @@ MonoBehaviour:
   _playOnAwake: 1
   _mute: 0
   _loop: 1
-  _volume: 1
+  _volume: .300000012
   _pitch: 1
   _minimumDistance: 50
   _maximumDistance: 100
