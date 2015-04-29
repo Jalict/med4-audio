@@ -7,6 +7,7 @@ public class Tracker : MonoBehaviour {
     private Camera cam;
     public GameObject track;
     public Light dirLight;
+    public GameObject soundController;
 
     private string filename;
 
@@ -15,10 +16,11 @@ public class Tracker : MonoBehaviour {
     private StreamWriter file;
     private Texture2D shot;
 
-
 	// Use this for initialization
 	void Start () {
+
         cam = gameObject.GetComponent<Camera>();
+        soundController = GameObject.Find("SoundController");
 
         filename = System.DateTime.Now.ToString("dd-MM-yyyy_HH-mm");
 
@@ -46,6 +48,7 @@ public class Tracker : MonoBehaviour {
     void StartTracking()
     {
         isTracking = true;
+
         StartCoroutine(Tracking());
     }
 
@@ -57,7 +60,7 @@ public class Tracker : MonoBehaviour {
 
     IEnumerator GetInitialOverviewTexture()
     {
-        dirLight.intensity = 1f;
+        dirLight.enabled = true;
 
         yield return new WaitForEndOfFrame();
 
@@ -74,13 +77,10 @@ public class Tracker : MonoBehaviour {
         cam.targetTexture = null;
         RenderTexture.active = null;
 
-        dirLight.intensity = 0.20f;
-
-        // DO REST HERE:
-        // http://answers.unity3d.com/questions/22954/how-to-save-a-picture-take-screenshot-from-a-camer.html
+        dirLight.enabled = false;
     }
 
-    void OnApplicationQuit()
+    void OnDestory()
     {
         StopCoroutine(Tracking());
         file.Close();
@@ -88,6 +88,19 @@ public class Tracker : MonoBehaviour {
         byte[] bytes = shot.EncodeToPNG();
         System.IO.File.WriteAllBytes(filename + ".png", bytes);
         Debug.Log(string.Format("Took screenshot to: {0}", filename + ".png"));
+    }
+
+    void OnApplicationQuit()
+    {
+        StopCoroutine(Tracking());
+
+        file.WriteLine(soundController.GetComponent<SoundControl>().state);
+        file.WriteLine(Time.realtimeSinceStartup);
+        file.Close();
+
+        byte[] bytes = shot.EncodeToPNG();
+        System.IO.File.WriteAllBytes(filename + ".png", bytes);
+        Debug.Log(string.Format("Took screenshot to: {0}", Application.dataPath + filename + ".png"));
     }
 }
 

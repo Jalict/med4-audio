@@ -10,6 +10,7 @@ public class PsCav1 : MonoBehaviour {
 	public Texture texture1;
 	public Texture texture2;
 	public Texture texture3;
+	public AudioClip sound;
 	
 	
 	// Use this for initialization
@@ -24,14 +25,25 @@ public class PsCav1 : MonoBehaviour {
 		if(curStage == 1 && Vector3.Distance(objW.transform.position, gameObject.transform.position) < 10) {
 			rend.material.mainTexture = texture2;
 			curStage ++;
+			AudioSource.PlayClipAtPoint(sound, transform.position);
 		}
 		if(curStage == 2 && Vector3.Distance(objF.transform.position, gameObject.transform.position) < 10) {
 			rend.material.mainTexture = texture3;
 			curStage ++;
+			AudioSource.PlayClipAtPoint(sound, transform.position);
 		}
-		if(curStage == 3 && Vector3.Distance(objB.transform.position, gameObject.transform.position) < 10) {
-			curStage ++;
+		if (curStage == 3 && Vector3.Distance (objB.transform.position, gameObject.transform.position) < 10){
+			StartCoroutine (ExitApp());
+			AudioSource.PlayClipAtPoint(sound, transform.position);
+		}
+
+		if (Input.GetKeyDown (KeyCode.Escape)) {
 			Application.Quit();
 		}
+	}
+
+	IEnumerator ExitApp(){
+		yield return new WaitForSeconds(5);
+		Application.Quit ();
 	}
 }

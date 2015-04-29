@@ -171,7 +171,7 @@ MonoBehaviour:
   _playOnAwake: 1
   _mute: 0
   _loop: 1
-  _volume: .00499999989
+  _volume: .000699999975
   _pitch: -.980000019
   _minimumDistance: 1
   _maximumDistance: 1000
@@ -321,6 +321,108 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 24be8e1643b8a474fbb57fcda8a1c454, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &239073786
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 863222474}
+    m_Modifications:
+    - target: {fileID: 400002, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -32.2999992
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 83.6999969
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -52.7999992
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
+      propertyPath: _reflectionRWall
+      value: .00999999978
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
+      propertyPath: _reflectionFWall
+      value: .00999999978
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
+      propertyPath: _reflectionLWall
+      value: .00999999978
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
+      propertyPath: _reflectionBWall
+      value: .00999999978
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
+      propertyPath: _reflectionFloor
+      value: .939999998
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
+      propertyPath: _reflectionCeiling
+      value: .00999999978
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
+      propertyPath: _Presets
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6500000, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
+      propertyPath: m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6500000, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6500000, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
+      propertyPath: m_Center.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
+      propertyPath: _pivotSelect
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 63.3263054
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 9.69227695
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 51.8011894
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
+      propertyPath: m_Name
+      value: TBE_Room 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &243786573
 Prefab:
@@ -535,13 +637,13 @@ MonoBehaviour:
   _maximumDistance: 75
   _rollOffFactor: 1.10000002
   _maxDistanceMute: 0
-  _dopplerIntensity: .100000001
+  _dopplerIntensity: 1
   _roomToggle: 1
   _erRoomObject: {fileID: 0}
   _detectRoomTrigger: 1
   _dopplerToggle: 1
   _channelSelect: 0
-  _reverbToggle: 1
+  _reverbToggle: 0
   _sourcePannerType: 0
   _roomPannerType: 0
   _attenMode: 0
@@ -563,21 +665,21 @@ AudioReverbZone:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 378696582}
   m_Enabled: 1
-  m_MinDistance: 15
-  m_MaxDistance: 75
+  m_MinDistance: 20
+  m_MaxDistance: 240
   m_ReverbPreset: 27
-  m_Room: -8000
+  m_Room: -1000
   m_RoomHF: -300
-  m_DecayTime: 1.20000005
-  m_DecayHFRatio: .519999981
-  m_Reflections: 7
+  m_DecayTime: .300000012
+  m_DecayHFRatio: 1.61000001
+  m_Reflections: -1500
   m_ReflectionsDelay: .0160000008
   m_Reverb: -6385
-  m_ReverbDelay: .00499999989
+  m_ReverbDelay: .0219999999
   m_HFReference: 5000
   m_RoomRolloffFactor: 0
-  m_Diffusion: 25
-  m_Density: 13
+  m_Diffusion: 52
+  m_Density: 42
   m_LFReference: 250
   m_RoomLF: -100
 --- !u!1001 &484889178
@@ -635,15 +737,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400002, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 28.2000008
+      value: 83.5999985
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 147.899994
+      value: 83.6999969
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -4.5999999
+      value: -30.7999992
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
       propertyPath: m_LocalRotation.x
@@ -711,15 +813,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
       propertyPath: m_LocalScale.x
-      value: 332.047302
+      value: 63.3263054
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
       propertyPath: m_LocalScale.y
-      value: 147.735947
+      value: 9.69227695
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
       propertyPath: m_LocalScale.z
-      value: 271.616089
+      value: 51.8011894
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
@@ -1047,6 +1149,8 @@ Transform:
   - {fileID: 2097608212}
   - {fileID: 1463235523}
   - {fileID: 1842501029}
+  - {fileID: 1424317480}
+  - {fileID: 1751259180}
   m_Father: {fileID: 0}
   m_RootOrder: 2
 --- !u!4 &877837115 stripped
@@ -1077,7 +1181,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 908611840}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.800000012, y: 24.8999996, z: 1.09000003}
+  m_LocalPosition: {x: -.649999976, y: 9.02000046, z: -1.76999998}
   m_LocalScale: {x: 1.41843975, y: 1.41843975, z: 1.41843975}
   m_Children: []
   m_Father: {fileID: 1968090939}
@@ -1088,7 +1192,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 908611840}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: -607568035, guid: 97a56801bcfe6ee47903a70dd64bdc23, type: 3}
   m_Name: 
@@ -1096,20 +1200,20 @@ MonoBehaviour:
   audioClip: {fileID: 8300000, guid: b1c1fa733348838468b3c336b1600904, type: 3}
   _playOnAwake: 1
   _mute: 0
-  _loop: 1
-  _volume: .0799999982
+  _loop: 0
+  _volume: .00999999978
   _pitch: 1.29999995
   _minimumDistance: 15
   _maximumDistance: 75
   _rollOffFactor: 1.10000002
   _maxDistanceMute: 0
-  _dopplerIntensity: .100000001
+  _dopplerIntensity: 1
   _roomToggle: 1
   _erRoomObject: {fileID: 0}
   _detectRoomTrigger: 1
   _dopplerToggle: 1
   _channelSelect: 0
-  _reverbToggle: 1
+  _reverbToggle: 0
   _sourcePannerType: 0
   _roomPannerType: 0
   _attenMode: 0
@@ -1929,6 +2033,10 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1415808099}
   m_Mesh: {fileID: 4300000, guid: 5d72ec0a69aa44a4c891199259784bc4, type: 3}
+--- !u!4 &1424317480 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400002, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
+  m_PrefabInternal: {fileID: 239073786}
 --- !u!1 &1463235519
 GameObject:
   m_ObjectHideFlags: 0
@@ -2384,6 +2492,108 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 24be8e1643b8a474fbb57fcda8a1c454, type: 2}
   m_PrefabInternal: {fileID: 1345504647}
+--- !u!1001 &1669337313
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 863222474}
+    m_Modifications:
+    - target: {fileID: 400002, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -19
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 96.3000031
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 48.2999992
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
+      propertyPath: _reflectionRWall
+      value: .00999999978
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
+      propertyPath: _reflectionFWall
+      value: .00999999978
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
+      propertyPath: _reflectionLWall
+      value: .00999999978
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
+      propertyPath: _reflectionBWall
+      value: .00999999978
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
+      propertyPath: _reflectionFloor
+      value: .939999998
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
+      propertyPath: _reflectionCeiling
+      value: .00999999978
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
+      propertyPath: _Presets
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6500000, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
+      propertyPath: m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6500000, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6500000, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
+      propertyPath: m_Center.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
+      propertyPath: _pivotSelect
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 63.3263054
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 35.4521675
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 51.8011894
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
+      propertyPath: m_Name
+      value: TBE_Room 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
+  m_IsPrefabParent: 0
 --- !u!4 &1690815645 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: d689b672beccd4ffea12f123902081e3, type: 3}
@@ -2483,6 +2693,10 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1740475958}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1751259180 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400002, guid: f9bcabcbb050f43eba872ef37ac8a475, type: 2}
+  m_PrefabInternal: {fileID: 1669337313}
 --- !u!1 &1789662090
 GameObject:
   m_ObjectHideFlags: 0
@@ -2840,23 +3054,23 @@ AudioReverbZone:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1931159551}
   m_Enabled: 1
-  m_MinDistance: 10
-  m_MaxDistance: 15
-  m_ReverbPreset: 16
+  m_MinDistance: 20
+  m_MaxDistance: 240
+  m_ReverbPreset: 27
   m_Room: -1000
-  m_RoomHF: -3300
-  m_DecayTime: 1.49000001
-  m_DecayHFRatio: .540000021
-  m_Reflections: -2560
-  m_ReflectionsDelay: .162
-  m_Reverb: -229
-  m_ReverbDelay: .0879999995
+  m_RoomHF: -300
+  m_DecayTime: .300000012
+  m_DecayHFRatio: 1.61000001
+  m_Reflections: -1500
+  m_ReflectionsDelay: .0160000008
+  m_Reverb: -6385
+  m_ReverbDelay: .0219999999
   m_HFReference: 5000
   m_RoomRolloffFactor: 0
-  m_Diffusion: 79
-  m_Density: 100
+  m_Diffusion: 52
+  m_Density: 42
   m_LFReference: 250
-  m_RoomLF: 0
+  m_RoomLF: -100
 --- !u!65 &1931159553
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2890,13 +3104,13 @@ MonoBehaviour:
   _maximumDistance: 75
   _rollOffFactor: 1.10000002
   _maxDistanceMute: 0
-  _dopplerIntensity: .100000001
+  _dopplerIntensity: 1
   _roomToggle: 1
   _erRoomObject: {fileID: 0}
   _detectRoomTrigger: 1
   _dopplerToggle: 1
   _channelSelect: 0
-  _reverbToggle: 1
+  _reverbToggle: 0
   _sourcePannerType: 0
   _roomPannerType: 0
   _attenMode: 0
@@ -3413,13 +3627,13 @@ MonoBehaviour:
   _maximumDistance: 75
   _rollOffFactor: 1.10000002
   _maxDistanceMute: 0
-  _dopplerIntensity: .100000001
+  _dopplerIntensity: 1
   _roomToggle: 1
   _erRoomObject: {fileID: 0}
   _detectRoomTrigger: 1
   _dopplerToggle: 1
   _channelSelect: 0
-  _reverbToggle: 1
+  _reverbToggle: 0
   _sourcePannerType: 0
   _roomPannerType: 0
   _attenMode: 0
@@ -3430,21 +3644,21 @@ AudioReverbZone:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2088826945}
   m_Enabled: 1
-  m_MinDistance: 15
-  m_MaxDistance: 75
+  m_MinDistance: 20
+  m_MaxDistance: 240
   m_ReverbPreset: 27
-  m_Room: -8000
+  m_Room: -1000
   m_RoomHF: -300
-  m_DecayTime: 1.20000005
-  m_DecayHFRatio: .519999981
-  m_Reflections: 7
+  m_DecayTime: .300000012
+  m_DecayHFRatio: 1.61000001
+  m_Reflections: -1500
   m_ReflectionsDelay: .0160000008
   m_Reverb: -6385
-  m_ReverbDelay: .00499999989
+  m_ReverbDelay: .0219999999
   m_HFReference: 5000
   m_RoomRolloffFactor: 0
-  m_Diffusion: 25
-  m_Density: 13
+  m_Diffusion: 52
+  m_Density: 42
   m_LFReference: 250
   m_RoomLF: -100
 --- !u!4 &2097608212 stripped
