@@ -64,7 +64,9 @@
      <Compile Include="Assets\OVR\Scripts\Util\OVRScreenFade.cs" />
      <Compile Include="Assets\OVR\Scripts\Util\OVRUGUI.cs" />
      <Compile Include="Assets\Prefabs\Bats\NewBehaviourScript.cs" />
+     <Compile Include="Assets\Scripts\FootSteps.cs" />
      <Compile Include="Assets\Scripts\PaperScript.cs" />
+     <Compile Include="Assets\TBE_3Dception\Utilities\TBE_SRChange.cs" />
      <None Include="Assets\Plugins\donotdelete.txt" />
      <None Include="Assets\Plugins\x86_64\donotdelete.txt" />
      <None Include="Assets\OVR\Shaders\TextShader3D.shader" />
@@ -80,6 +82,9 @@
      <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity64/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="TBE_3DCore">
+ <HintPath>C:/Users/Andreas/Desktop/med4-p4-audio/Med4-407-Final-Iteration/Assets/TBE_3Dception/Core/TBE_3DCore.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>C:/Program Files (x86)/Unity64/Editor/Data/PlaybackEngines/iossupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

@@ -50,6 +50,7 @@
      <Compile Include="Assets\OVR\Editor\OVRGameView.cs" />
      <Compile Include="Assets\OVR\Editor\OVRPrefabs.cs" />
      <Compile Include="Assets\OVR\Editor\OVRShimLoader.cs" />
+     <Compile Include="Assets\TBE_3Dception\Utilities\Editor\TBE_Diagnose.cs" />
      <None Include="Assets\Plugins\donotdelete.txt" />
      <None Include="Assets\Plugins\x86_64\donotdelete.txt" />
      <None Include="Assets\OVR\Shaders\TextShader3D.shader" />
@@ -71,6 +72,12 @@
  </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>C:/Program Files (x86)/Unity64/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="TBE_3DCore">
+ <HintPath>C:/Users/Andreas/Desktop/med4-p4-audio/Med4-407-Final-Iteration/Assets/TBE_3Dception/Core/TBE_3DCore.dll</HintPath>
+ </Reference>
+ <Reference Include="TBE_3DEditor">
+ <HintPath>C:/Users/Andreas/Desktop/med4-p4-audio/Med4-407-Final-Iteration/Assets/TBE_3Dception/Editor/TBE_3DEditor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>C:/Program Files (x86)/Unity64/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
@@ -109,8 +116,6 @@
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
       <Project>{071817A1-118F-8298-3BC0-B935D55FC6B6}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
-    <ProjectReference Include="Assembly-CSharp-vs.csproj">
-      <Project>{9517DC74-089E-C8D4-C7CD-912E5F52B0EF}</Project>      <Name>Assembly-CSharp-vs</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
