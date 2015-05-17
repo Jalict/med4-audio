@@ -7,6 +7,7 @@ public class Tracker : MonoBehaviour {
     private Camera cam;
     public GameObject track;
     public Light dirLight;
+    public SoundControl sc;
 
     private string filename;
 
@@ -14,6 +15,7 @@ public class Tracker : MonoBehaviour {
 
     private StreamWriter file;
     private Texture2D shot;
+    private float timestamp;
 
 
 	// Use this for initialization
@@ -21,6 +23,7 @@ public class Tracker : MonoBehaviour {
         cam = gameObject.GetComponent<Camera>();
 
         filename = System.DateTime.Now.ToString("dd-MM-yyyy_HH-mm");
+        timestamp = Time.timeSinceLevelLoad;
 
         if(File.Exists(filename + ".txt")) {
             Debug.Log("SHIT EXIST");
@@ -57,7 +60,7 @@ public class Tracker : MonoBehaviour {
 
     IEnumerator GetInitialOverviewTexture()
     {
-        dirLight.intensity = 1f;
+        dirLight.enabled = true;
 
         yield return new WaitForEndOfFrame();
 
@@ -74,7 +77,7 @@ public class Tracker : MonoBehaviour {
         cam.targetTexture = null;
         RenderTexture.active = null;
 
-        dirLight.intensity = 0.20f;
+        dirLight.enabled = false;
 
         // DO REST HERE:
         // http://answers.unity3d.com/questions/22954/how-to-save-a-picture-take-screenshot-from-a-camer.html
@@ -83,6 +86,8 @@ public class Tracker : MonoBehaviour {
     void OnApplicationQuit()
     {
         StopCoroutine(Tracking());
+        file.WriteLine("" + sc.state);
+        file.WriteLine("" + (Time.timeSinceLevelLoad - timestamp));
         file.Close();
 
         byte[] bytes = shot.EncodeToPNG();
