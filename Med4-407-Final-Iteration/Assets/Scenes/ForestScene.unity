@@ -2263,7 +2263,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1455062416}
   - 114: {fileID: 1455062419}
-  - 167: {fileID: 1455062418}
   - 114: {fileID: 1455062417}
   m_Layer: 0
   m_Name: FootStepSound
@@ -2279,7 +2278,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1455062415}
   m_LocalRotation: {x: 0, y: -.389161021, z: 0, w: .921169817}
-  m_LocalPosition: {x: 88.6295471, y: 48.6067543, z: 124.024117}
+  m_LocalPosition: {x: .0299999993, y: -.829999983, z: -.0199999996}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1057970075}
@@ -2297,30 +2296,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   src: {fileID: 1455062419}
   obj: {fileID: 729368335}
---- !u!167 &1455062418
-AudioReverbZone:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1455062415}
-  m_Enabled: 1
-  m_MinDistance: 10
-  m_MaxDistance: 15
-  m_ReverbPreset: 16
-  m_Room: -1000
-  m_RoomHF: -3300
-  m_DecayTime: 1.49000001
-  m_DecayHFRatio: .540000021
-  m_Reflections: -2560
-  m_ReflectionsDelay: .162
-  m_Reverb: -229
-  m_ReverbDelay: .0879999995
-  m_HFReference: 5000
-  m_RoomRolloffFactor: 0
-  m_Diffusion: 79
-  m_Density: 100
-  m_LFReference: 250
-  m_RoomLF: 0
 --- !u!114 &1455062419
 MonoBehaviour:
   m_ObjectHideFlags: 0
