@@ -71,7 +71,7 @@ public class OVRPlayerController : MonoBehaviour
 	/// <summary>
 	/// Modifies the strength of gravity.
 	/// </summary>
-	public float GravityModifier = 0.379f;
+	public float GravityModifier = 0.3f;
 	
 	/// <summary>
 	/// If true, the OVRPlayerController will use the player's profile data for height, eye depth, etc.
@@ -81,14 +81,14 @@ public class OVRPlayerController : MonoBehaviour
 	protected CharacterController Controller = null;
 	protected OVRCameraRig CameraRig = null;
 
-	private float MoveScale = 0.3f;
+	private float MoveScale = 0.4f;
 	private Vector3 MoveThrottle = Vector3.zero;
 	private float FallSpeed = 0.0f;
 	private OVRPose? InitialPose;
 	private float InitialYRotation = 0.0f;
 	private float MoveScaleMultiplier = 0.3f;
 	private float RotationScaleMultiplier = 1.0f;
-	private bool  SkipMouseRotation = false;
+	private bool  SkipMouseRotation = true;
 	private bool  HaltUpdateMovement = false;
 	private bool prevHatLeft = false;
 	private bool prevHatRight = false;
