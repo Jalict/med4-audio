@@ -61,30 +61,26 @@ public class Tracker : MonoBehaviour {
                     if (t1 == 0)
                     {
                         t1 = Time.timeSinceLevelLoad;
-                        break;
                     }
-                    continue;
+                    break;
                 case 3:
                     if (t2 == 0)
                     {
                         t2 = Time.timeSinceLevelLoad;
-                        break;
                     }
-                    continue;
+                    break;
                 case 4:
                     if (t3 == 0)
                     {
                         t3 = Time.timeSinceLevelLoad;
-                        break;
                     }
-                    continue;
+                    break;
                 case 5:
                     if (t4 == 0)
                     {
                         t4 = Time.timeSinceLevelLoad;
-                        break;
                     }
-                    continue;
+                    break;
             }
 
             yield return new WaitForSeconds(0.5f);
@@ -93,6 +89,7 @@ public class Tracker : MonoBehaviour {
 
     void StartTracking()
     {
+        isTracking = true;
         StartCoroutine(Tracking());
     }
 
@@ -133,9 +130,9 @@ public class Tracker : MonoBehaviour {
         file.WriteLine("" + sc.state);
         file.WriteLine("" + (Time.timeSinceLevelLoad - timestamp));
         file.WriteLine("" + (timestamp - t1));
-        file.WriteLine("" + (t1 - t2));
-        file.WriteLine("" + (t2 - t3));
-        file.WriteLine("" + (t3 - t4));
+        file.WriteLine("" + (timestamp - t2));
+        file.WriteLine("" + (timestamp - t3));
+        file.WriteLine("" + (timestamp - t4));
         file.Close();
 
         byte[] bytes = shot.EncodeToPNG();
