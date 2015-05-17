@@ -8,6 +8,7 @@ public class Tracker : MonoBehaviour {
     public GameObject track;
     public Light dirLight;
     public SoundControl sc;
+    public PaperScript ps;
 
     private string filename;
 
@@ -17,13 +18,14 @@ public class Tracker : MonoBehaviour {
     private Texture2D shot;
     private float timestamp;
 
+    private float t1 = 0, t2 = 0, t3 = 0, t4 = 0;
+
 
 	// Use this for initialization
 	void Start () {
         cam = gameObject.GetComponent<Camera>();
 
         filename = System.DateTime.Now.ToString("dd-MM-yyyy_HH-mm");
-        timestamp = Time.timeSinceLevelLoad;
 
         if(File.Exists(filename + ".txt")) {
             Debug.Log("SHIT EXIST");
@@ -38,9 +40,52 @@ public class Tracker : MonoBehaviour {
 
     IEnumerator Tracking()
     {
+        while (true)
+        {
+            if (Input.anyKeyDown)
+                break;
+
+            yield return new WaitForFixedUpdate();
+        }
+
+        Debug.Log("STARTED TRACKING");
+        timestamp = Time.timeSinceLevelLoad;
+
         while (isTracking)
         {
             file.WriteLine(track.transform.position.ToString());
+
+            switch (ps.curStage)
+            {
+                case 2:
+                    if (t1 == 0)
+                    {
+                        t1 = Time.timeSinceLevelLoad;
+                        break;
+                    }
+                    continue;
+                case 3:
+                    if (t2 == 0)
+                    {
+                        t2 = Time.timeSinceLevelLoad;
+                        break;
+                    }
+                    continue;
+                case 4:
+                    if (t3 == 0)
+                    {
+                        t3 = Time.timeSinceLevelLoad;
+                        break;
+                    }
+                    continue;
+                case 5:
+                    if (t4 == 0)
+                    {
+                        t4 = Time.timeSinceLevelLoad;
+                        break;
+                    }
+                    continue;
+            }
 
             yield return new WaitForSeconds(0.5f);
         }
@@ -48,7 +93,6 @@ public class Tracker : MonoBehaviour {
 
     void StartTracking()
     {
-        isTracking = true;
         StartCoroutine(Tracking());
     }
 
@@ -88,6 +132,10 @@ public class Tracker : MonoBehaviour {
         StopCoroutine(Tracking());
         file.WriteLine("" + sc.state);
         file.WriteLine("" + (Time.timeSinceLevelLoad - timestamp));
+        file.WriteLine("" + (timestamp - t1));
+        file.WriteLine("" + (t1 - t2));
+        file.WriteLine("" + (t2 - t3));
+        file.WriteLine("" + (t3 - t4));
         file.Close();
 
         byte[] bytes = shot.EncodeToPNG();

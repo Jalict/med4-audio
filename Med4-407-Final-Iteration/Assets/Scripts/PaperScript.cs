@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class PaperScript : MonoBehaviour {
-	private int curStage;
+	public int curStage;
 	public GameObject objW;
 	public GameObject objB;
 	public GameObject objF;
@@ -16,7 +16,6 @@ public class PaperScript : MonoBehaviour {
 	public AudioClip sound;
 
 	private bool isFinished;
-
 	
 	// Use this for initialization
 	void Start () {
@@ -46,6 +45,7 @@ public class PaperScript : MonoBehaviour {
 		if (curStage == 4 && Vector3.Distance (objW.transform.position, gameObject.transform.position) < 10 && !isFinished){
 			rend.material.mainTexture = texture5;
 			AudioSource.PlayClipAtPoint(sound, transform.position);
+            curStage++;
 			StartCoroutine (ExitApp());
 		}
 
