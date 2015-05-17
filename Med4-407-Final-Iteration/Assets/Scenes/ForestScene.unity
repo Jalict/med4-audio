@@ -187,9 +187,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 73798256}
+  - 114: {fileID: 73798258}
   m_Layer: 0
   m_Name: Bats
-  m_TagString: Untagged
+  m_TagString: SoundChange
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -216,6 +217,39 @@ Transform:
   - {fileID: 2114757596}
   m_Father: {fileID: 0}
   m_RootOrder: 7
+--- !u!114 &73798258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 73798255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -607568035, guid: 97a56801bcfe6ee47903a70dd64bdc23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClip: {fileID: 8300000, guid: 2a8fdc79c9eea4f0fb4a7b322e27bd24, type: 3}
+  _mixerGroup: {fileID: 0}
+  _playOnAwake: 1
+  _bypassLisEffects: 0
+  _mute: 0
+  _loop: 1
+  _volume: .119999997
+  _pitch: 1
+  _minimumDistance: 4
+  _maximumDistance: 400
+  _rollOffFactor: 1.10000002
+  _maxDistanceMute: 0
+  _dopplerIntensity: .100000001
+  _roomToggle: 1
+  _erRoomObject: {fileID: 0}
+  _detectRoomTrigger: 1
+  _dopplerToggle: 1
+  _channelSelect: 0
+  _reverbToggle: 1
+  _sourcePannerType: 0
+  _roomPannerType: 0
+  _attenMode: 0
 --- !u!1001 &83616384
 Prefab:
   m_ObjectHideFlags: 0
@@ -495,6 +529,10 @@ Prefab:
       propertyPath: m_Name
       value: WaterBasicNightime 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6b436d069d11415d1100ab9b44295342, type: 2}
+      propertyPath: m_ReceiveShadows
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6b436d069d11415d1100ab9b44295342, type: 2}
   m_IsPrefabParent: 0
@@ -725,7 +763,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d569304764218e46b3cb514886d7d1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objW: {fileID: 0}
+  objW: {fileID: 959435933}
   objB: {fileID: 73798255}
   objF: {fileID: 2021745003}
   objT: {fileID: 178132816}
@@ -735,7 +773,7 @@ MonoBehaviour:
   texture3: {fileID: 2800000, guid: 83555cd9d5156f94d99b51000223a0f6, type: 3}
   texture4: {fileID: 2800000, guid: 9b71e295916ad594383f8cb07089dc47, type: 3}
   texture5: {fileID: 2800000, guid: 2f61e16b067bcb4489aa233d5534ebc7, type: 3}
-  sound: {fileID: 0}
+  sound: {fileID: 8300000, guid: 72844fc585f415841ab8c3e80b8c07c8, type: 3}
 --- !u!23 &414622648
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -788,8 +826,8 @@ Transform:
   m_PrefabParentObject: {fileID: 462262, guid: ae6b0c47043b74042b9ba5d6acab29e3, type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 414622646}
-  m_LocalRotation: {x: -.475687236, y: .00614079414, z: .00332103204, w: .879586816}
-  m_LocalPosition: {x: -.0649999976, y: -.409999996, z: .651000023}
+  m_LocalRotation: {x: -.000129335211, y: .879525721, z: -.475699067, w: -.0120421778}
+  m_LocalPosition: {x: .0170000009, y: -.439999998, z: .629000008}
   m_LocalScale: {x: .0907477438, y: .308446854, z: .0900173262}
   m_Children: []
   m_Father: {fileID: 1057970075}
@@ -1116,6 +1154,66 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d9d1fbfcf69364ffd8f9c6ade9ce90fe, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &593130317
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 593130318}
+  - 108: {fileID: 593130319}
+  m_Layer: 0
+  m_Name: Point light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &593130318
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 593130317}
+  m_LocalRotation: {x: 0, y: -.389161021, z: 0, w: .921169817}
+  m_LocalPosition: {x: .0260000005, y: .0590000004, z: .00300000003}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1057970075}
+  m_RootOrder: 4
+--- !u!108 &593130319
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 593130317}
+  m_Enabled: 1
+  serializedVersion: 6
+  m_Type: 2
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1
+  m_Range: 1.10000002
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_Strength: 1
+    m_Bias: .0500000007
+    m_NormalBias: .400000006
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_BounceIntensity: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_AreaSize: {x: 1, y: 1}
 --- !u!1001 &613049118
 Prefab:
   m_ObjectHideFlags: 0
@@ -1419,6 +1517,78 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 949976053}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &957298107
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 957298110}
+  - 108: {fileID: 957298109}
+  - 114: {fileID: 957298108}
+  m_Layer: 0
+  m_Name: Directional light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &957298108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 957298107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a0f1cec1aba85c43988c06ef5fa03f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!108 &957298109
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 957298107}
+  m_Enabled: 1
+  serializedVersion: 6
+  m_Type: 1
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_Strength: 1
+    m_Bias: .0500000007
+    m_NormalBias: .400000006
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_BounceIntensity: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_AreaSize: {x: 1, y: 1}
+--- !u!4 &957298110
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 957298107}
+  m_LocalRotation: {x: .408217937, y: -.234569728, z: .109381676, w: .875426054}
+  m_LocalPosition: {x: 255.54451, y: 183.54071, z: 119.753708}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
 --- !u!1 &959435933
 GameObject:
   m_ObjectHideFlags: 0
@@ -1428,10 +1598,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 959435934}
   - 114: {fileID: 959435936}
-  - 167: {fileID: 959435935}
   m_Layer: 0
   m_Name: WaterfallSoundSource
-  m_TagString: Untagged
+  m_TagString: SoundChange
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1448,30 +1617,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1684519817}
   m_RootOrder: 7
---- !u!167 &959435935
-AudioReverbZone:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 959435933}
-  m_Enabled: 1
-  m_MinDistance: 10
-  m_MaxDistance: 15
-  m_ReverbPreset: 16
-  m_Room: -1000
-  m_RoomHF: -3300
-  m_DecayTime: 1.49000001
-  m_DecayHFRatio: .540000021
-  m_Reflections: -2560
-  m_ReflectionsDelay: .162
-  m_Reverb: -229
-  m_ReverbDelay: .0879999995
-  m_HFReference: 5000
-  m_RoomRolloffFactor: 0
-  m_Diffusion: 79
-  m_Density: 100
-  m_LFReference: 250
-  m_RoomLF: 0
 --- !u!114 &959435936
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1489,11 +1634,11 @@ MonoBehaviour:
   _bypassLisEffects: 0
   _mute: 0
   _loop: 1
-  _volume: .100000001
+  _volume: .0199999996
   _pitch: 1
-  _minimumDistance: 1
-  _maximumDistance: 75
-  _rollOffFactor: 1.20000005
+  _minimumDistance: 4
+  _maximumDistance: 100
+  _rollOffFactor: .800000012
   _maxDistanceMute: 0
   _dopplerIntensity: .100000001
   _roomToggle: 1
@@ -1668,6 +1813,14 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 12.5884905
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6b436d069d11415d1100ab9b44295342, type: 2}
+      propertyPath: m_ReceiveShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 6b436d069d11415d1100ab9b44295342, type: 2}
+      propertyPath: m_Name
+      value: WaterfallWater
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6b436d069d11415d1100ab9b44295342, type: 2}
   m_IsPrefabParent: 0
@@ -1675,6 +1828,46 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 3c6500aa484755f408b049116718c1d9, type: 3}
   m_PrefabInternal: {fileID: 613049118}
+--- !u!1 &1205311133
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1205311135}
+  - 114: {fileID: 1205311134}
+  m_Layer: 0
+  m_Name: SoundController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1205311134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1205311133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44e05008c302b43838e3be9b86cb0440, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  state: 0
+--- !u!4 &1205311135
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1205311133}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 255.54451, y: 183.54071, z: 119.753708}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
 --- !u!1001 &1223589380
 Prefab:
   m_ObjectHideFlags: 0
@@ -2054,6 +2247,10 @@ Prefab:
       propertyPath: m_Ellipsoid.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: 5be23960a2935414d97c5ad7b275da28, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5be23960a2935414d97c5ad7b275da28, type: 2}
   m_IsPrefabParent: 0
@@ -2141,7 +2338,7 @@ MonoBehaviour:
   _bypassLisEffects: 0
   _mute: 0
   _loop: 1
-  _volume: .00499999989
+  _volume: .0900000036
   _pitch: -.980000019
   _minimumDistance: 1
   _maximumDistance: 1000
@@ -2367,10 +2564,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 1543481100}
   - 114: {fileID: 1543481102}
-  - 167: {fileID: 1543481101}
   m_Layer: 0
   m_Name: TransformerSoundSource
-  m_TagString: Untagged
+  m_TagString: SoundChange
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2387,30 +2583,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2116368637}
   m_RootOrder: 5
---- !u!167 &1543481101
-AudioReverbZone:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1543481099}
-  m_Enabled: 1
-  m_MinDistance: 10
-  m_MaxDistance: 15
-  m_ReverbPreset: 16
-  m_Room: -1000
-  m_RoomHF: -3300
-  m_DecayTime: 1.49000001
-  m_DecayHFRatio: .540000021
-  m_Reflections: -2560
-  m_ReflectionsDelay: .162
-  m_Reverb: -229
-  m_ReverbDelay: .0879999995
-  m_HFReference: 5000
-  m_RoomRolloffFactor: 0
-  m_Diffusion: 79
-  m_Density: 100
-  m_LFReference: 250
-  m_RoomLF: 0
 --- !u!114 &1543481102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2422,17 +2594,17 @@ MonoBehaviour:
   m_Script: {fileID: -607568035, guid: 97a56801bcfe6ee47903a70dd64bdc23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioClip: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: 0b38b6a0072251d4dabf7cacb1416eed, type: 3}
   _mixerGroup: {fileID: 0}
   _playOnAwake: 1
   _bypassLisEffects: 0
   _mute: 0
   _loop: 1
-  _volume: 1
-  _pitch: 1.29999995
-  _minimumDistance: 1
-  _maximumDistance: 75
-  _rollOffFactor: 1.03999996
+  _volume: .280000001
+  _pitch: 1.5
+  _minimumDistance: 4
+  _maximumDistance: 1200
+  _rollOffFactor: .649999976
   _maxDistanceMute: 0
   _dopplerIntensity: .100000001
   _roomToggle: 1
@@ -2519,10 +2691,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 1557002929}
   - 114: {fileID: 1557002931}
-  - 167: {fileID: 1557002930}
   m_Layer: 0
   m_Name: FrogSoundSource
-  m_TagString: Untagged
+  m_TagString: SoundChange
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2539,30 +2710,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 9018856}
   m_RootOrder: 6
---- !u!167 &1557002930
-AudioReverbZone:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1557002928}
-  m_Enabled: 1
-  m_MinDistance: 10
-  m_MaxDistance: 15
-  m_ReverbPreset: 16
-  m_Room: -1000
-  m_RoomHF: -3300
-  m_DecayTime: 1.49000001
-  m_DecayHFRatio: .540000021
-  m_Reflections: -2560
-  m_ReflectionsDelay: .162
-  m_Reverb: -229
-  m_ReverbDelay: .0879999995
-  m_HFReference: 5000
-  m_RoomRolloffFactor: 0
-  m_Diffusion: 79
-  m_Density: 100
-  m_LFReference: 250
-  m_RoomLF: 0
 --- !u!114 &1557002931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2582,8 +2729,8 @@ MonoBehaviour:
   _loop: 1
   _volume: 1
   _pitch: 1
-  _minimumDistance: 1
-  _maximumDistance: 75
+  _minimumDistance: 4
+  _maximumDistance: 100
   _rollOffFactor: 1.12
   _maxDistanceMute: 0
   _dopplerIntensity: .100000001

@@ -65,7 +65,9 @@
      <Compile Include="Assets\OVR\Scripts\Util\OVRUGUI.cs" />
      <Compile Include="Assets\Prefabs\Bats\NewBehaviourScript.cs" />
      <Compile Include="Assets\Scripts\FootSteps.cs" />
+     <Compile Include="Assets\Scripts\LightController.cs" />
      <Compile Include="Assets\Scripts\PaperScript.cs" />
+     <Compile Include="Assets\Scripts\SoundControl.cs" />
      <Compile Include="Assets\TBE_3Dception\Utilities\TBE_SRChange.cs" />
      <None Include="Assets\Plugins\donotdelete.txt" />
      <None Include="Assets\Plugins\x86_64\donotdelete.txt" />
