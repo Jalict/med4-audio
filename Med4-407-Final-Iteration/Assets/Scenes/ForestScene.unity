@@ -891,7 +891,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 414622646}
   m_LocalRotation: {x: .00466441736, y: .97622627, z: -.216648564, w: -.00489817047}
-  m_LocalPosition: {x: .0130000003, y: -.437999994, z: .252999991}
+  m_LocalPosition: {x: .0610000007, y: -.437999994, z: .252999991}
   m_LocalScale: {x: .0907477438, y: .308446854, z: .0900173262}
   m_Children: []
   m_Father: {fileID: 1057970075}
@@ -1318,8 +1318,8 @@ Light:
   serializedVersion: 6
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
-  m_Range: 3
+  m_Intensity: .300000012
+  m_Range: 7
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -2393,6 +2393,70 @@ Prefab:
       propertyPath: m_TagString
       value: Untagged
       objectReference: {fileID: 0}
+    - target: {fileID: 1200006, guid: 5be23960a2935414d97c5ad7b275da28, type: 2}
+      propertyPath: Does Animate Color?
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1200006, guid: 5be23960a2935414d97c5ad7b275da28, type: 2}
+      propertyPath: colorAnimation[0].rgba
+      value: 4279901457
+      objectReference: {fileID: 0}
+    - target: {fileID: 1200006, guid: 5be23960a2935414d97c5ad7b275da28, type: 2}
+      propertyPath: colorAnimation[1].rgba
+      value: 4279967506
+      objectReference: {fileID: 0}
+    - target: {fileID: 1200006, guid: 5be23960a2935414d97c5ad7b275da28, type: 2}
+      propertyPath: colorAnimation[2].rgba
+      value: 3289980431
+      objectReference: {fileID: 0}
+    - target: {fileID: 1200006, guid: 5be23960a2935414d97c5ad7b275da28, type: 2}
+      propertyPath: colorAnimation[3].rgba
+      value: 2316509713
+      objectReference: {fileID: 0}
+    - target: {fileID: 1200006, guid: 5be23960a2935414d97c5ad7b275da28, type: 2}
+      propertyPath: colorAnimation[4].rgba
+      value: 169484048
+      objectReference: {fileID: 0}
+    - target: {fileID: 1200004, guid: 5be23960a2935414d97c5ad7b275da28, type: 2}
+      propertyPath: colorAnimation[3].rgba
+      value: 3558284817
+      objectReference: {fileID: 0}
+    - target: {fileID: 1200004, guid: 5be23960a2935414d97c5ad7b275da28, type: 2}
+      propertyPath: colorAnimation[0].rgba
+      value: 169352723
+      objectReference: {fileID: 0}
+    - target: {fileID: 1200004, guid: 5be23960a2935414d97c5ad7b275da28, type: 2}
+      propertyPath: colorAnimation[1].rgba
+      value: 4279705875
+      objectReference: {fileID: 0}
+    - target: {fileID: 1200004, guid: 5be23960a2935414d97c5ad7b275da28, type: 2}
+      propertyPath: colorAnimation[2].rgba
+      value: 4279703311
+      objectReference: {fileID: 0}
+    - target: {fileID: 1200004, guid: 5be23960a2935414d97c5ad7b275da28, type: 2}
+      propertyPath: colorAnimation[4].rgba
+      value: 4279967250
+      objectReference: {fileID: 0}
+    - target: {fileID: 1200002, guid: 5be23960a2935414d97c5ad7b275da28, type: 2}
+      propertyPath: colorAnimation[0].rgba
+      value: 1253396
+      objectReference: {fileID: 0}
+    - target: {fileID: 1200002, guid: 5be23960a2935414d97c5ad7b275da28, type: 2}
+      propertyPath: colorAnimation[1].rgba
+      value: 4279510036
+      objectReference: {fileID: 0}
+    - target: {fileID: 1200002, guid: 5be23960a2935414d97c5ad7b275da28, type: 2}
+      propertyPath: colorAnimation[2].rgba
+      value: 4279377935
+      objectReference: {fileID: 0}
+    - target: {fileID: 1200002, guid: 5be23960a2935414d97c5ad7b275da28, type: 2}
+      propertyPath: colorAnimation[3].rgba
+      value: 3020759568
+      objectReference: {fileID: 0}
+    - target: {fileID: 1200002, guid: 5be23960a2935414d97c5ad7b275da28, type: 2}
+      propertyPath: colorAnimation[4].rgba
+      value: 168697870
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5be23960a2935414d97c5ad7b275da28, type: 2}
   m_IsPrefabParent: 0
@@ -2455,7 +2519,7 @@ MonoBehaviour:
   _bypassLisEffects: 0
   _mute: 0
   _loop: 1
-  _volume: .0900000036
+  _volume: .0199999996
   _pitch: -.980000019
   _minimumDistance: 1
   _maximumDistance: 1000
@@ -3250,6 +3314,60 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7b5f2f9ea19c74c659ab8ac969280fb2, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &1877769913
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 498552, guid: eaf63367b9f3aec46952a4f714048523, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 498552, guid: eaf63367b9f3aec46952a4f714048523, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 498552, guid: eaf63367b9f3aec46952a4f714048523, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 498552, guid: eaf63367b9f3aec46952a4f714048523, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 498552, guid: eaf63367b9f3aec46952a4f714048523, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 498552, guid: eaf63367b9f3aec46952a4f714048523, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: .500000119
+      objectReference: {fileID: 0}
+    - target: {fileID: 498552, guid: eaf63367b9f3aec46952a4f714048523, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: .49999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 498552, guid: eaf63367b9f3aec46952a4f714048523, type: 2}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 11405694, guid: eaf63367b9f3aec46952a4f714048523, type: 2}
+      propertyPath: track
+      value: 
+      objectReference: {fileID: 729368335}
+    - target: {fileID: 11405694, guid: eaf63367b9f3aec46952a4f714048523, type: 2}
+      propertyPath: dirLight
+      value: 
+      objectReference: {fileID: 957298109}
+    - target: {fileID: 11405694, guid: eaf63367b9f3aec46952a4f714048523, type: 2}
+      propertyPath: sc
+      value: 
+      objectReference: {fileID: 1205311134}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: eaf63367b9f3aec46952a4f714048523, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &1888187825 stripped
 Transform:
