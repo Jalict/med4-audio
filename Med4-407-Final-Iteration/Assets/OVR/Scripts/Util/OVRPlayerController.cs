@@ -56,7 +56,7 @@ public class OVRPlayerController : MonoBehaviour
 	/// <summary>
 	/// The rate of rotation when using the keyboard.
 	/// </summary>
-	public float RotationRatchet = 5.0f;
+	public float RotationRatchet = 0.0f;
 
 	/// <summary>
 	/// If true, reset the initial yaw of the player controller when the Hmd pose is recentered.
@@ -81,12 +81,12 @@ public class OVRPlayerController : MonoBehaviour
 	protected CharacterController Controller = null;
 	protected OVRCameraRig CameraRig = null;
 
-	private float MoveScale = 1.0f;
+	private float MoveScale = 0.3f;
 	private Vector3 MoveThrottle = Vector3.zero;
 	private float FallSpeed = 0.0f;
 	private OVRPose? InitialPose;
 	private float InitialYRotation = 0.0f;
-	private float MoveScaleMultiplier = 1.0f;
+	private float MoveScaleMultiplier = 0.3f;
 	private float RotationScaleMultiplier = 1.0f;
 	private bool  SkipMouseRotation = false;
 	private bool  HaltUpdateMovement = false;
